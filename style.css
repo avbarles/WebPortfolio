@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Roboto:wght@500;900&display=swap');
+
+/*CSS RESET*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color: #A9A9A9;
+}
+/*NAV BAR*/
+
+.header-main{
+
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    
+    display: flex;
+    justify-content: right;
+}
+
+.header-main{
+   
+    display: flex;
+}
+
+.fornav{
+    width: fit-content;
+}
+
+.fornav ul{
+    margin-left: 150px;
+}
+
+.fornav ul li{
+    display: inline;
+    padding-right: 50px;
+    font-size: 30px;
+}
+.fornav ul li a{
+	color: white;
+	text-decoration: none;
+}
+.fornav ul li a:hover{
+
+    color: yellow;
+}
+main-bg {
+	height: 100vh;
+	width: 100%;
+	background-image: url(images/antonio-2.jpg);
+	background-size: cover;
+	background-attachment: scroll;
+
+
+
+	
+}
+/*Landing page*/
+
+#bg-image{
+	background-image: url(images/antonio-2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+}
+
+.front-bg{
+	
+	background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    width: 100%;
+
+
+
+
+
+}
+
+.title {
+	padding-top: 300px;
+	text-align: right;
+	color: white;
+	font-size: 80px;
+	text-align: right;
+	
+}
+
+.subtitle {
+	
+	color: white;
+	font-size: 25px;
+	text-align: right;
+	
+}
+
+/*ABOUT ME*/
+
+.under-hr {
+	width: 150px;
+    border-top: 7px solid #FF00FF;
+}
+
+.img1 {
+	width:100%;
+	height:500px;
+}
+
+html {
+	height: 800px;
+}
