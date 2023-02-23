@@ -67,7 +67,7 @@ main-bg {
 	background-image: url(images/antonio-2.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: center top;
+	background-position: center;
 	background-attachment: scroll;
 	height: 100vh;
 	width: 100%;
