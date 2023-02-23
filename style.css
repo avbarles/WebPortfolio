@@ -16,22 +16,12 @@ body{
 	background-color: #000000;
 }
 
-.bg-custom-grey {
-	background-color: #c3cac2 !important;
-}
+
 /*NAV BAR*/
 
 
 
-.header-main{
 
-    border-radius: 5px;
-    width: 100%;
-    height: 60px;
-    
-    display: flex;
-
-}
 
 
 .nav-a {
