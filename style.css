@@ -20,7 +20,10 @@ body{
 /*NAV BAR*/
 
 
+#base:hover {
+	background-color: #48D1CC;
 
+}
 
 
 
@@ -62,12 +65,12 @@ main-bg {
 	
 }
 /*Landing page*/
-
+/*
 #bg-image{
 	background-image: url(images/antonio-2.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: center;
+	background-position: center top;
 	background-attachment: scroll;
 	height: 100vh;
 	width: 100%;
@@ -84,12 +87,27 @@ main-bg {
 
 
 }
+*/
+
+#landing {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.61),
+		rgba(0, 0, 0, 0.61)
+	), 
+	url("./images/antonio-2.jpg");
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
 
 .title {
-	padding-top: 300px;
+	padding-top: 180px;
+
 	text-align: right;
 	color: white;
-	font-size: 80px;
+	font-size: 60px;
 	text-align: right;
 	
 }
@@ -97,12 +115,17 @@ main-bg {
 .subtitle {
 	
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: right;
 	
 }
 
-/*ABOUT ME*/
+#cv-view{
+	
+	margin-left: 62rem;
+}
+
+/*ABOUT ME
 
 .under-hr {
 	width: 150px;
@@ -136,5 +159,55 @@ html {
 
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+footer {
+	
+}
 
+#socmed-fb{
+	width: 27px;
+    height: 27px;
+    background-image: url('./images/fbblack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#socmed-fb:hover{
+	width: 27px;
+    height: 27px;
+    background-image: url('./images/fborig.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#socmed-ig{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/igblack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#socmed-ig:hover{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/igorig.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#socmed-linked {
+	width: 30px;
+    height: 30px;
+    background-image: url('./images/linkedin-black.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#socmed-linked:hover {
+	width: 30px;
+    height: 30px;
+    background-image: url('./images/linkedin-orig.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

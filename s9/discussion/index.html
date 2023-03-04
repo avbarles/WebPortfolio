@@ -1,0 +1,211 @@
+<!-- boilerplate
+	- refers to the pre-written piece of code. 
+	- it provides a standard structure or framework that can be customized for a specific application
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Viewport is a viewable area of webpage -->
+		<!-- responsive meta tags  -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- bootstrap css -->
+
+		<link 	rel="stylesheet" 
+				href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+				integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+				crossorigin="anonymous"
+		>
+
+		<title>Bootstrap</title>
+	</head>
+
+	<body>
+		<!-- Bootstrap is a popular front-end web development that provides pre=built componenets and tools for creating responsive and mobile-first web pages 
+			- two ways to use bootstrap
+				- download and include Bootstrap in our project
+				- content delivery network (CDN)
+					- is a network server that hosts commonly used files, like CSS stylesheet or JS which can be accessed from the webpage
+		-->
+		<h1 class="text-center text-white bg-danger">Bootstrap Grid System</h1>
+
+		<div class="container-fluid">
+			<div class="row">
+				<!-- A div column can occupy more than 1 column. we may create layouts wherein one div occupies a column and another one can occupy 4 columns. But as you can see, it resulted to 12 columns for our row.
+
+				if the divs in a row, occupies more than 12 columns, the row will overflow 
+
+				syntax to define the number columns a div will occupy in a row
+
+					col-breakpoint-numberOfColumns (must not exceed 12 to avoid overflow.)
+			-->
+			</div>
+			<div class="bg-primary border border-dark col-md-8 order-1 order-sm-2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+			</div>
+			<div class="bg-dark border border-dark col-md-8 order-2 order-sm-1">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+			</div>
+		</div>
+
+		<div>
+			<h2 class="text-center">Rows with 2 equal columns</h2>
+			<h3 class="text-center">1:1 Ratio</h3>
+			<div class="row mt-3">
+				<!-- mt- margin top with 3 sizes
+						1-5 bootstrap sizes
+				 -->
+				<div class="bg-primary py-3 border-dark col-6">
+					<h2 class="text-center">6 Columns</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum 
+					</p>
+				</div>
+			</div>
+			<div class="bg-danger py-3 border border-dark col-6">
+				<h2 class="text-center">6 Columns</h2>
+			</div>
+		</div>
+		<!-- mini activity
+				create a row with columns in 1:3 ratio. making on column is thrice as big as the other one 
+
+				bg color: warning (bigger column) and danger (smaller)-->
+
+				<div class="row">
+					<div class="bg-warning text-center py-3 border border-dark col-9"> 9 columns</div>
+				
+				
+					<div class="bg-danger text-center py-3 border border-dark col-3">3 columns</h2>
+				</div>
+
+				<!-- Three columns Start -->
+
+				<h2>&nbsp; Three Columns</h2>
+
+				<div class="container-fluid">
+
+					<!-- Row with 3 equal columns -->
+					<h3>&nbsp; 1:1:1 ratio</h3>
+
+					<div class="text-light row">
+						<div class="bg-primary pt-3 pb-3 border border dark col-4">4 Col</div>
+						<div class="bg-secondary pt-3 pb-3 border border dark col-4">4 Col</div>
+						<div class="bg-primary pt-3 pb-3 border border dark col-4">4 Col</div>
+					</div>
+					
+					<!-- Row with three columns divided in 1:2:1 ratio -->
+
+					<h3>1:2:1 Ratio</h3>
+
+					<div class="text-light row">
+						<div class="bg-primary pt-3 pb-3 border border dark col-3">3 Col</div>
+						<div class="bg-secondary pt-3 pb-3 border border dark col-6">6 Col</div>
+						<div class="bg-primary pt-3 pb-3 border border dark col-3">3 Col</div>
+					</div>
+
+					<!-- Row  with three columns -->
+
+					<h3>Uneven Ratio</h3>
+
+					<div class="text-light row">
+						<div class="bg-primary pt-3 pb-3 border border dark col-3">3 Col</div>
+						<div class="bg-secondary pt-3 pb-3 border border dark col-7">7 Col</div>
+						<div class="bg-primary pt-3 pb-3 border border dark col-2">2 Col</div>
+					</div>
+
+					<!-- Automatic Sizing Chart -->
+
+					<h2>Automatic Sizing Chart</h2>
+					<div class="container-fluid">
+						<div class="text-light row">	
+							<div class="bg-primary pt-3 pb-3 border border-dark col">Auto</div>
+							<div class="bg-secondary pt-3 pb-3 border border-dark col">Auto</div>
+							
+							
+						</div>
+						
+					</div>
+
+					<!-- A mobile responsiveness columns start -->
+
+					<h2>Mobile Responsiveness Columns</h2>
+
+					<div class="container-fluid">
+						<div class="text-light row">
+							<div class="bg-primary pt-3 pb-3 border border-dark col-sm-6 col-md-4 col-lg-2">Responsive</div>
+
+							<div class="bg-secondary pt-3 pb-3 border border-dark col-sm-6 col-md-8 col-lg-10">Responsive</div>
+						</div>
+					</div>
+
+					<!-- Multi-column layouts Start -->
+
+					<h2>Multi-column layouts</h2>
+
+					<div class="container-fluid">
+						<div class="text-light row">
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 1</div>
+
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 2</div>
+
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 3</div>
+
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 4</div>
+
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 5</div>
+
+							<div class="bg-primary pt-3 pb-3 border border-dark col-4">Catalog 6</div>
+						</div>
+
+					</div>
+
+					<!-- Offsetting Columns Start -->
+
+					<h2>Offsetting COlumns</h2>
+
+					<div class="container-fluid">
+						<div class="text-light row">
+							<div class="bg-primary pt-3 pb-3 border border-dark offset-2 col-6">Offset Column</div>
+							<div class="bg-primary pt-3 pb-3 border border-dark offset-md-2 col-6">Offset Column</div>
+							<div class="bg-primary pt-3 pb-3 border border-dark offset-lg-2 col-6">Offset Column</div>
+
+						</div>
+					</div>
+
+					<!-- Column Orders Start -->
+
+					<h2>Column Orders</h2>
+
+					<div class="container-fluid">
+						<div class="text-light row">
+							<div class="bg-primary pt-3 pb-3 border border-dark col order-2 order-md-1">left</div>
+							<div class="bg-primary pt-3 pb-3 border border-dark col order-1 order-md-2">Right</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+		<!-- js dependencies -->
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+				integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	</body>
+</html>
